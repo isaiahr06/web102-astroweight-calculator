@@ -4,12 +4,74 @@
 <head>
   <meta charset="utf-8">
   <title>Astro Weight Calculator</title>
+  <style> 
+    h1{
+      text-align: center;
+      font-size: 80px;
+      background-color: darkblue;
+      color:white;
+      border-radius: 100px;
+      padding: 50px;
+      
+    }
+    body{
+      background-color:darkslateblue
+    }
+    p {
+      text-align:center;
+      font-size: 20px;
+      color: white;
+    }
+    input{
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+      padding:10px;
+    }
+    select{
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    button{
+      display: block;
+      margin: 80px auto;
+      border-radius: 20px;
+      padding: 30px 70px;
+      color: white;
+      background-color: red;
+      font-size: 20px;
+
+    }
+
+  </style>
 </head>
 
 <body>
   <!-- Write your markup here  -->
+   <main>
+    <h1>Astro Weight Calculator</h1>
+    <p> Enter Your Weight:</p>
+    <input id="user-weight" type="text" placeholder=" Weight (lbs) "/>
 
-  <script src="main.js" charset="utf-8"></script>
+    <p> Select a Planet:</p>
+    <select id="planet" name="planet">
+      <option value="pluto">Pluto</option>
+      <option value="neptune">Neptune</option>
+      <option value="uranus">Uranus</option>
+      <option value="saturn">Saturn</option>
+      <option value="jupiter">Juipter</option>
+      <option value="mars">Mars</option>
+      <option value="moon">Moon</option>
+      <option value="earth">Earth</option>
+      <option value="venus">Venus</option>
+      <option value="mercury">Mercury</option>
+      <option value="sun">Sun</option>
+    </select>
+    <div id="output"></div>
+    <button id="calculate">Calculate!</button>
+   </main>
 </body>
 
 </html>
