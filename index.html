@@ -44,6 +44,12 @@
       font-size: 20px;
 
     }
+      div{
+        text-align: center;
+        font-size: 30px;
+        color: white;
+      
+      }
 
   </style>
 </head>
@@ -57,21 +63,11 @@
 
     <p> Select a Planet:</p>
     <select id="planet" name="planet">
-      <option value="pluto">Pluto</option>
-      <option value="neptune">Neptune</option>
-      <option value="uranus">Uranus</option>
-      <option value="saturn">Saturn</option>
-      <option value="jupiter">Juipter</option>
-      <option value="mars">Mars</option>
-      <option value="moon">Moon</option>
-      <option value="earth">Earth</option>
-      <option value="venus">Venus</option>
-      <option value="mercury">Mercury</option>
-      <option value="sun">Sun</option>
     </select>
     <div id="output"></div>
-    <button id="calculate">Calculate!</button>
+    <button onclick="handleClickEvent()">Calculate!</button>
    </main>
+   <script src="main.js"></script>
 </body>
 
 </html>
