@@ -34,5 +34,5 @@ function handleClickEvent(){
     let planetName = document.getElementById('planets').value;
     let result = calculateWeight(userWeight, planetName);
     let output = document.getElementById('output');
-    output.textContent = "If you were on " + planetName + " you would weigh " + result + "lbs";
+    output.textContent = "If you were on " + planetName + ", you would weigh " + result.toFixed(2) + "lbs!";
 }
