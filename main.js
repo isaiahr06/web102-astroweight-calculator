@@ -13,7 +13,7 @@ var planets = [
         ['Sun', 27.9] 
     ];
 
-let dropdown = document.getElementById('planet');
+let dropdown = document.getElementById('planets');
 
 planets.forEach(function(planet){
     let option = document.createElement('option');
@@ -31,7 +31,7 @@ function calculateWeight(weight, planetName){
 }
 function handleClickEvent(){
     let userWeight = document.getElementById('user-weight').value;
-    let planetName = document.getElementById('planet').value;
+    let planetName = document.getElementById('planets').value;
     let result = calculateWeight(userWeight, planetName);
     let output = document.getElementById('output');
     output.textContent = "If you were on " + planetName + " you would weigh " + result + "lbs";
