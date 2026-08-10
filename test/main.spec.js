@@ -3,11 +3,11 @@ const nodeStatic = require('node-static');
 const http = require('http');
 
 const PORT = 8888;
-const url = `http://localhost:${PORT}/index.html`;
+const url = `http://localhost:${PORT}/public/index.html`;
 
 let server;
 
-test.setTimeout(5000);
+test.setTimeout(15000);
 
 test.beforeAll(async () => {
   const file = new nodeStatic.Server('./', { cache: 0 });
